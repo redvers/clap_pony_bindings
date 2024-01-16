@@ -24,8 +24,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun arg_id(ptr: NullablePointer[Arg] tag, id: Pointer[I8] tag): U8 =>
-    @arg_id(ptr, id)
+  fun arg_id(ptr: NullablePointer[Arg] tag, id: String): U8 =>
+    @arg_id(ptr, id.cstring())
 
 
 /*
@@ -37,8 +37,8 @@ primitive Clibpcap
   Arguments:
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun arg_init(id: Pointer[I8] tag): NullablePointer[Arg] =>
-    @arg_init(id)
+  fun arg_init(id: String): NullablePointer[Arg] =>
+    @arg_init(id.cstring())
 
 
 /*
@@ -51,8 +51,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun arg_long(ptr: NullablePointer[Arg] tag, long: Pointer[I8] tag): U8 =>
-    @arg_long(ptr, long)
+  fun arg_long(ptr: NullablePointer[Arg] tag, long: String): U8 =>
+    @arg_long(ptr, long.cstring())
 
 
 /*
@@ -92,8 +92,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun argmatches_get_one_int(ptr: NullablePointer[ArgMatches] tag, id: Pointer[I8] tag): NullablePointer[FFIBytes] =>
-    @argmatches_get_one_int(ptr, id)
+  fun argmatches_get_one_int(ptr: NullablePointer[ArgMatches] tag, id: String): NullablePointer[FFIBytes] =>
+    @argmatches_get_one_int(ptr, id.cstring())
 
 
 /*
@@ -106,8 +106,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun argmatches_get_one_str(ptr: NullablePointer[ArgMatches] tag, id: Pointer[I8] tag): NullablePointer[FFIBytes] =>
-    @argmatches_get_one_str(ptr, id)
+  fun argmatches_get_one_str(ptr: NullablePointer[ArgMatches] tag, id: String): NullablePointer[FFIBytes] =>
+    @argmatches_get_one_str(ptr, id.cstring())
 
 
 /*
@@ -120,8 +120,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_about(ptr: NullablePointer[Command] tag, desc: Pointer[I8] tag): U8 =>
-    @command_about(ptr, desc)
+  fun command_about(ptr: NullablePointer[Command] tag, desc: String): U8 =>
+    @command_about(ptr, desc.cstring())
 
 
 /*
@@ -134,8 +134,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_after_help(ptr: NullablePointer[Command] tag, text: Pointer[I8] tag): U8 =>
-    @command_after_help(ptr, text)
+  fun command_after_help(ptr: NullablePointer[Command] tag, text: String): U8 =>
+    @command_after_help(ptr, text.cstring())
 
 
 /*
@@ -148,8 +148,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_after_long_help(ptr: NullablePointer[Command] tag, text: Pointer[I8] tag): U8 =>
-    @command_after_long_help(ptr, text)
+  fun command_after_long_help(ptr: NullablePointer[Command] tag, text: String): U8 =>
+    @command_after_long_help(ptr, text.cstring())
 
 
 /*
@@ -204,8 +204,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_author(ptr: NullablePointer[Command] tag, author: Pointer[I8] tag): U8 =>
-    @command_author(ptr, author)
+  fun command_author(ptr: NullablePointer[Command] tag, author: String): U8 =>
+    @command_author(ptr, author.cstring())
 
 
 /*
@@ -218,8 +218,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_before_help(ptr: NullablePointer[Command] tag, text: Pointer[I8] tag): U8 =>
-    @command_before_help(ptr, text)
+  fun command_before_help(ptr: NullablePointer[Command] tag, text: String): U8 =>
+    @command_before_help(ptr, text.cstring())
 
 
 /*
@@ -232,8 +232,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_before_long_help(ptr: NullablePointer[Command] tag, text: Pointer[I8] tag): U8 =>
-    @command_before_long_help(ptr, text)
+  fun command_before_long_help(ptr: NullablePointer[Command] tag, text: String): U8 =>
+    @command_before_long_help(ptr, text.cstring())
 
 
 /*
@@ -246,8 +246,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_bin_name(ptr: NullablePointer[Command] tag, name: Pointer[I8] tag): U8 =>
-    @command_bin_name(ptr, name)
+  fun command_bin_name(ptr: NullablePointer[Command] tag, name: String): U8 =>
+    @command_bin_name(ptr, name.cstring())
 
 
 /*
@@ -343,8 +343,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_display_name(ptr: NullablePointer[Command] tag, name: Pointer[I8] tag): U8 =>
-    @command_display_name(ptr, name)
+  fun command_display_name(ptr: NullablePointer[Command] tag, name: String): U8 =>
+    @command_display_name(ptr, name.cstring())
 
 
 /*
@@ -541,9 +541,9 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(signed char) size=8]
     [FundamentalType(long unsigned int) size=64]
-*/
-  fun command_get_matches_from(ptr: NullablePointer[Command] tag, strings: NullablePointer[Pointer[I8]] tag, len: U64): NullablePointer[ArgMatches] =>
+  fun command_get_matches_from(ptr: NullablePointer[Command] tag, strings: Array[String], len: U64): NullablePointer[ArgMatches] =>
     @command_get_matches_from(ptr, strings, len)
+*/
 
 
 /*
@@ -767,8 +767,8 @@ primitive Clibpcap
   Arguments:
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_init(name: Pointer[I8] tag): NullablePointer[Command] =>
-    @command_init(name)
+  fun command_init(name: String): NullablePointer[Command] =>
+    @command_init(name.cstring())
 
 
 /*
@@ -1067,8 +1067,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_long_about(ptr: NullablePointer[Command] tag, desc: Pointer[I8] tag): U8 =>
-    @command_long_about(ptr, desc)
+  fun command_long_about(ptr: NullablePointer[Command] tag, desc: String): U8 =>
+    @command_long_about(ptr, desc.cstring())
 
 
 /*
@@ -1094,8 +1094,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_long_version(ptr: NullablePointer[Command] tag, version: Pointer[I8] tag): U8 =>
-    @command_long_version(ptr, version)
+  fun command_long_version(ptr: NullablePointer[Command] tag, version: String): U8 =>
+    @command_long_version(ptr, version.cstring())
 
 
 /*
@@ -1108,8 +1108,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_name(ptr: NullablePointer[Command] tag, name: Pointer[I8] tag): U8 =>
-    @command_name(ptr, name)
+  fun command_name(ptr: NullablePointer[Command] tag, name: String): U8 =>
+    @command_name(ptr, name.cstring())
 
 
 /*
@@ -1136,8 +1136,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_next_help_heading(ptr: NullablePointer[Command] tag, heading: Pointer[I8] tag): U8 =>
-    @command_next_help_heading(ptr, heading)
+  fun command_next_help_heading(ptr: NullablePointer[Command] tag, heading: String): U8 =>
+    @command_next_help_heading(ptr, heading.cstring())
 
 
 /*
@@ -1178,8 +1178,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_override_help(ptr: NullablePointer[Command] tag, text: Pointer[I8] tag): U8 =>
-    @command_override_help(ptr, text)
+  fun command_override_help(ptr: NullablePointer[Command] tag, text: String): U8 =>
+    @command_override_help(ptr, text.cstring())
 
 
 /*
@@ -1192,8 +1192,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_override_usage(ptr: NullablePointer[Command] tag, text: Pointer[I8] tag): U8 =>
-    @command_override_usage(ptr, text)
+  fun command_override_usage(ptr: NullablePointer[Command] tag, text: String): U8 =>
+    @command_override_usage(ptr, text.cstring())
 
 
 /*
@@ -1441,9 +1441,9 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(signed char) size=8]
     [FundamentalType(long unsigned int) size=64]
-*/
-  fun command_try_get_matches_from(ptr: NullablePointer[Command] tag, strings: NullablePointer[Pointer[I8]] tag, len: U64): NullablePointer[ArgMatches] =>
+  fun command_try_get_matches_from(ptr: NullablePointer[Command] tag, strings: Array[String], len: U64): NullablePointer[ArgMatches] =>
     @command_try_get_matches_from(ptr, strings, len)
+*/
 
 
 /*
@@ -1742,8 +1742,8 @@ primitive Clibpcap
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-  fun command_version(ptr: NullablePointer[Command] tag, version: Pointer[I8] tag): U8 =>
-    @command_version(ptr, version)
+  fun command_version(ptr: NullablePointer[Command] tag, version: String): U8 =>
+    @command_version(ptr, version.cstring())
 
 
 /*

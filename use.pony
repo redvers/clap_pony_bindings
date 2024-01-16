@@ -23,7 +23,7 @@ use @arg_destroy[U8](ptr: NullablePointer[Arg] tag)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @arg_id[U8](ptr: NullablePointer[Arg] tag, id: Pointer[I8] tag)
+use @arg_id[U8](ptr: NullablePointer[Arg] tag, id: Pointer[U8] tag)
 
 
 
@@ -36,7 +36,7 @@ use @arg_id[U8](ptr: NullablePointer[Arg] tag, id: Pointer[I8] tag)
   Arguments:
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @arg_init[NullablePointer[Arg]](id: Pointer[I8] tag)
+use @arg_init[NullablePointer[Arg]](id: Pointer[U8] tag)
 
 
 
@@ -50,7 +50,7 @@ use @arg_init[NullablePointer[Arg]](id: Pointer[I8] tag)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @arg_long[U8](ptr: NullablePointer[Arg] tag, long: Pointer[I8] tag)
+use @arg_long[U8](ptr: NullablePointer[Arg] tag, long: Pointer[U8] tag)
 
 
 
@@ -91,7 +91,7 @@ use @argmatches_destroy[U8](ptr: NullablePointer[ArgMatches] tag)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @argmatches_get_one_int[NullablePointer[FFIBytes]](ptr: NullablePointer[ArgMatches] tag, id: Pointer[I8] tag)
+use @argmatches_get_one_int[NullablePointer[FFIBytes]](ptr: NullablePointer[ArgMatches] tag, id: Pointer[U8] tag)
 
 
 
@@ -105,7 +105,7 @@ use @argmatches_get_one_int[NullablePointer[FFIBytes]](ptr: NullablePointer[ArgM
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @argmatches_get_one_str[NullablePointer[FFIBytes]](ptr: NullablePointer[ArgMatches] tag, id: Pointer[I8] tag)
+use @argmatches_get_one_str[NullablePointer[FFIBytes]](ptr: NullablePointer[ArgMatches] tag, id: Pointer[U8] tag)
 
 
 
@@ -119,7 +119,7 @@ use @argmatches_get_one_str[NullablePointer[FFIBytes]](ptr: NullablePointer[ArgM
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_about[U8](ptr: NullablePointer[Command] tag, desc: Pointer[I8] tag)
+use @command_about[U8](ptr: NullablePointer[Command] tag, desc: Pointer[U8] tag)
 
 
 
@@ -133,7 +133,7 @@ use @command_about[U8](ptr: NullablePointer[Command] tag, desc: Pointer[I8] tag)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_after_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8] tag)
+use @command_after_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[U8] tag)
 
 
 
@@ -147,7 +147,7 @@ use @command_after_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8]
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_after_long_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8] tag)
+use @command_after_long_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[U8] tag)
 
 
 
@@ -203,7 +203,7 @@ use @command_args_override_self[U8](ptr: NullablePointer[Command] tag, yes: U8)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_author[U8](ptr: NullablePointer[Command] tag, author: Pointer[I8] tag)
+use @command_author[U8](ptr: NullablePointer[Command] tag, author: Pointer[U8] tag)
 
 
 
@@ -217,7 +217,7 @@ use @command_author[U8](ptr: NullablePointer[Command] tag, author: Pointer[I8] t
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_before_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8] tag)
+use @command_before_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[U8] tag)
 
 
 
@@ -231,7 +231,7 @@ use @command_before_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_before_long_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8] tag)
+use @command_before_long_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[U8] tag)
 
 
 
@@ -245,7 +245,7 @@ use @command_before_long_help[U8](ptr: NullablePointer[Command] tag, text: Point
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_bin_name[U8](ptr: NullablePointer[Command] tag, name: Pointer[I8] tag)
+use @command_bin_name[U8](ptr: NullablePointer[Command] tag, name: Pointer[U8] tag)
 
 
 
@@ -342,7 +342,7 @@ use @command_disable_version_flag[U8](ptr: NullablePointer[Command] tag, yes: U8
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_display_name[U8](ptr: NullablePointer[Command] tag, name: Pointer[I8] tag)
+use @command_display_name[U8](ptr: NullablePointer[Command] tag, name: Pointer[U8] tag)
 
 
 
@@ -541,7 +541,7 @@ use @command_get_matches[NullablePointer[ArgMatches]](ptr: NullablePointer[Comma
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(signed char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-use @command_get_matches_from[NullablePointer[ArgMatches]](ptr: NullablePointer[Command] tag, strings: NullablePointer[Pointer[I8]] tag, len: U64)
+use @command_get_matches_from[NullablePointer[ArgMatches]](ptr: NullablePointer[Command] tag, strings: Pointer[Pointer[U8]] tag, len: U64)
 
 
 
@@ -766,7 +766,7 @@ use @command_infer_subcommands[U8](ptr: NullablePointer[Command] tag, yes: U8)
   Arguments:
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_init[NullablePointer[Command]](name: Pointer[I8] tag)
+use @command_init[NullablePointer[Command]](name: Pointer[U8] tag)
 
 
 
@@ -1066,7 +1066,7 @@ use @command_literal_underline_color_rgb[U8](ptr: NullablePointer[Command] tag, 
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_long_about[U8](ptr: NullablePointer[Command] tag, desc: Pointer[I8] tag)
+use @command_long_about[U8](ptr: NullablePointer[Command] tag, desc: Pointer[U8] tag)
 
 
 
@@ -1093,7 +1093,7 @@ use @command_long_help[U8](ptr: NullablePointer[Command] tag)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_long_version[U8](ptr: NullablePointer[Command] tag, version: Pointer[I8] tag)
+use @command_long_version[U8](ptr: NullablePointer[Command] tag, version: Pointer[U8] tag)
 
 
 
@@ -1107,7 +1107,7 @@ use @command_long_version[U8](ptr: NullablePointer[Command] tag, version: Pointe
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_name[U8](ptr: NullablePointer[Command] tag, name: Pointer[I8] tag)
+use @command_name[U8](ptr: NullablePointer[Command] tag, name: Pointer[U8] tag)
 
 
 
@@ -1135,7 +1135,7 @@ use @command_next_display_order[U8](ptr: NullablePointer[Command] tag, ord: U64)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_next_help_heading[U8](ptr: NullablePointer[Command] tag, heading: Pointer[I8] tag)
+use @command_next_help_heading[U8](ptr: NullablePointer[Command] tag, heading: Pointer[U8] tag)
 
 
 
@@ -1177,7 +1177,7 @@ use @command_no_binary_name[U8](ptr: NullablePointer[Command] tag, yes: U8)
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_override_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8] tag)
+use @command_override_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[U8] tag)
 
 
 
@@ -1191,7 +1191,7 @@ use @command_override_help[U8](ptr: NullablePointer[Command] tag, text: Pointer[
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_override_usage[U8](ptr: NullablePointer[Command] tag, text: Pointer[I8] tag)
+use @command_override_usage[U8](ptr: NullablePointer[Command] tag, text: Pointer[U8] tag)
 
 
 
@@ -1441,7 +1441,7 @@ use @command_try_get_matches[NullablePointer[ArgMatches]](ptr: NullablePointer[C
     [PointerType size=64]->[PointerType size=64]->[FundamentalType(signed char) size=8]
     [FundamentalType(long unsigned int) size=64]
 */
-use @command_try_get_matches_from[NullablePointer[ArgMatches]](ptr: NullablePointer[Command] tag, strings: NullablePointer[Pointer[I8]] tag, len: U64)
+use @command_try_get_matches_from[NullablePointer[ArgMatches]](ptr: NullablePointer[Command] tag, strings: Pointer[Pointer[U8]] tag, len: U64)
 
 
 
@@ -1741,7 +1741,7 @@ use @command_valid_underline_color_rgb[U8](ptr: NullablePointer[Command] tag, r:
     [PointerType size=64]->[Struct size=,fid: f28]
     [PointerType size=64]->[FundamentalType(signed char) size=8]
 */
-use @command_version[U8](ptr: NullablePointer[Command] tag, version: Pointer[I8] tag)
+use @command_version[U8](ptr: NullablePointer[Command] tag, version: Pointer[U8] tag)
 
 
 
